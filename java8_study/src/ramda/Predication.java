@@ -8,7 +8,7 @@ import java.util.List;
 interface Predicate<T> {
 	boolean test(T t);
 }
-
+// Predicate<T> 인터페이스는 제네릭 T를 인수로 받아 boolean을 반환하는 test 추상 메소드를 정의한다 
 public class Predication {
 	
 	public static <T> List<T> filter(List<T> list, Predicate<T> p) {

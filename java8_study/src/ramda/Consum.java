@@ -7,7 +7,7 @@ import java.util.List;
 interface Consumer<T> {
 	void accept(T t);
 }
-
+// Consumer<T> 인터페이스는 제네릭 T를 인수로 받아 void를 반환하는 추상 메소드 accept를 정의한다
 public class Consum {
 	
 	public static <T> void foreach(List<T> list, Consumer<T> c) {
